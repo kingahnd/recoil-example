@@ -8,12 +8,9 @@ import './App.css';
 const App = () => (
     <div className={'App'}>
         <RecoilRoot>
-            <>
-                <h2>Songs</h2>
-                <Suspense fallback={<span>Loading...</span>}>
-                    <Songs />
-                </Suspense>
-            </>
+            <Suspense fallback={<span>Loading...</span>}>
+                <Songs />
+            </Suspense>
         </RecoilRoot>
     </div>
 );

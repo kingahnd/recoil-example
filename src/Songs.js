@@ -17,6 +17,7 @@ const Songs = () => {
 
     return (
         <>
+            <h2>Songs</h2>
             {songs.map(song => (
                 <div key={song.id}>
                     <p onClick={() => setCurrentSongID(song.id)}>
